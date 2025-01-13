@@ -1,0 +1,106 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Top Banner */
+.top-banner {
+  background-color: #ff3e6c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.banner-text {
+  display: inline-block;
+  margin: 0;
+}
+
+.signup-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #ff3e6c;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #ffe1e9;
+}
+
+/* Nav Container */
+.nav-container {
+  height: 60px;
+  position: relative;
+}
+
+/* Logo Section */
+.logo-section {
+  
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff3e6c;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Navigation Links */
+.nav-links {
+  float: right;
+  padding: 15px 20px;
+}
+
+.nav-links button {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ff3e6c;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links .language-selector button {
+  border: none;
+  background: none;
+  font-size: 14px;
+}
+
+.cart-icon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Clearfix for Floats */
+.nav-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
