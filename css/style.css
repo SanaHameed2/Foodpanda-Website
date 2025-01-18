@@ -1,106 +1,117 @@
-/* General Reset */
-body, html {
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-/* Navbar Styles */
+body {
+  font-family: "opensens", sans-serif;
+}
 .navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background-color: #e21b70;
+  color: white;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  height: 0px;
 }
 
-/* Top Banner */
-.top-banner {
-  background-color:#D70365;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 14px;
-  position: relative;
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.banner-text {
-  display: inline-block;
-  margin: 0;
+.navbar img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  filter: invert();
 }
 
-.signup-btn {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  background-color: #fff;
-  color: #D70365;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
+.navbar span {
+  font-size: 1.2em;
+  white-space: nowrap;
   font-weight: bold;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-left: 30px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
-.signup-btn:hover {
-  background-color: #ffe1e9;
+.navbar .close-btn {
+  cursor: pointer;
+  font-size: 1.5em;
 }
 
-/* Nav Container */
-.nav-container {
-  height: 60px;
-  position: relative;
+.navbar .close-btn:hover {
+  color: lightgray;
 }
 
-/* Logo Section */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
 .logo-section {
-  
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 30px;
   height: 30px;
-  vertical-align: middle;
+  width: 30px;
+  margin-right: 8px;
 }
 
 .brand-name {
   font-size: 18px;
-  font-weight: bold;
-  color: #D70365;
-  margin-left: 10px;
-  vertical-align: middle;
+  font-weight: 600;
+  color: white;
 }
 
-/* Navigation Links */
-.nav-links {
-  float: right;
-  padding: 15px 20px;
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.nav-links button {
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #D70365;
-  padding: 8px 15px;
-  border-radius: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.nav-links .language-selector button {
-  border: none;
+.login-btn,
+.signup-btn {
   background: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-.cart-icon img {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-left: 10px;
+.signup-btn {
+  background-color: white;
+  color: #e21b70;
+  font-weight: 600;
 }
 
-/* Clearfix for Floats */
-.nav-container::after {
-  content: "";
-  display: table;
-  clear: both;
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #ffffff;
+  color: #e21b70;
 }

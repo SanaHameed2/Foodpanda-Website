@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .navbar-content {
+        margin-bottom: 10px;
+        flex-grow: 0;
+    }
+    .navbar a{
+        margin-bottom: 10px;
+    }
+    .navbar .close-btn{
+        margin-left: 0;
+    }
+}
