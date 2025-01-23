@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #e21b70;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,66 +75,56 @@ nav.main-navbar {
   align-items: center;
   background-color: #fff;
   padding: 10px 20px;
-  box-shadow: 0 1px 12px;
-  gray;
 }
-
-nav.main-navbar .logo {
+.logo {
+  padding: 1rem 0;
   display: flex;
-  align-items: center;
+  align-items: center; /* Align items vertically */
+  gap: 8px; /* Add spacing between image and text */
 }
 
-nav.main-navbar .logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.logo img {
+  width: 34px;
+  height: auto;
   border-radius: 5px;
 }
 
-nav.main-navbar .logo span {
+.logo span {
   font-size: 1.4rem;
   font-weight: bold;
   color: #ff007a;
+  margin: 0; 
 }
 
-nav.main-navbar .nav-buttons {
-  display: flex;
-}
-
-nav.main-navbar .nav-buttons button {
-  /* margin-left: 50px; */
+nav button {
   padding: 8px 16px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
 }
 
-
-nav.main-navbar .nav-buttons button {
-  padding: 8px 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
+nav .login-btn,
+nav .signup-btn {
+  display: inline;
+  justify-content: center;
+  margin: 10px;
   cursor: pointer;
-  margin-left: 150px;
-  margin-right: -120px;
 }
 
-nav.main-navbar .nav-buttons .login-btn {
+nav .login-btn {
   background-color: #fff;
-  color: #333;
+  color: #39434d;
   border: 1px solid #000000;
-
+  font-weight: 600;
 }
 
-nav.main-navbar .nav-buttons .signup-btn {
+nav .signup-btn {
   background-color: #ff007a;
   color: #fff;
   border: none;
-
+  border-radius: 8px;
+  font-size: 14px;
 }
-
 
 nav.main-navbar .nav-icons {
   display: flex;
@@ -151,7 +145,7 @@ nav.main-navbar .nav-icons .dropdown-icon {
   color: #333;
 }
 
-nav.main-navbar .nav-icons .cart-icon img {
+nav.main-navbar .nav-icons .cart-icon svg {
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -159,26 +153,40 @@ nav.main-navbar .nav-icons .cart-icon img {
 
 /* Hero Section */
 section.hero {
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   height: 500px;
-  position: relative
+  position: relative;
 }
 
 .hero .bg-wrapper {
   position: absolute;
   width: 100%;
-  background-color: #F7F7F7;
-  backgroung: url 
+  height: 100%;
+  background: url("your-image.jpg") no-repeat center center / cover;
   z-index: -1;
-  float: right;
-  max-heigt: 335px;
-  background-size: cover;
 }
 
-.hero>h1 {
+.hero > h1 {
   font-size: 2rem;
   font-weight: 300;
   margin-top: 9rem;
   min-width: 220px;
   width: 70%;
+  color: var(--font-color-dark);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav.main-navbar {
+    flex-direction: column;
+  }
+
+  nav.main-navbar .nav-buttons button {
+    margin: 10px 0;
+  }
+
+  section.hero {
+    height: auto;
+    text-align: center;
+  }
 }
