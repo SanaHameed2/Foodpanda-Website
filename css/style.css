@@ -172,6 +172,7 @@ section.hero {
   margin-top: 9rem;
   min-width: 220px;
   width: 70%;
+<<<<<<< HEAD
   color: var(--font-color-dark);
 }
 
@@ -190,3 +191,6 @@ section.hero {
     text-align: center;
   }
 }
+=======
+}
+>>>>>>> 0a2ca0b63e5b7f173929159a5f5eb0bbdf00de39
