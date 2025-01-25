@@ -21,6 +21,9 @@ body {
   align-items: center;
   font-family: "Open Sans", sans-serif;
   height: 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar-content-top {
@@ -79,8 +82,8 @@ nav.main-navbar {
 .logo {
   padding: 1rem 0;
   display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 8px; /* Add spacing between image and text */
+  align-items: center; 
+  gap: 8px;
 }
 
 .logo img {
@@ -113,8 +116,8 @@ nav .signup-btn {
 
 nav .login-btn {
   background-color: #fff;
-  color: #39434d;
-  border: 1px solid #000000;
+  color: #5c646c;
+  border: 1px solid #5c646c;
   font-weight: 600;
 }
 
@@ -124,31 +127,37 @@ nav .signup-btn {
   border: none;
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 600;
 }
 
-nav.main-navbar .nav-icons {
-  display: flex;
-}
-
-nav.main-navbar .nav-icons .language-selector {
-  display: flex;
+.language-selector {
+  display: inline-flex;
   align-items: center;
-  margin-right: 20px;
+  gap: 8px; 
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2); 
+}
+
+.arrow {
+  color: #FF5733;
+}
+
+
+.language {
   font-size: 14px;
   font-weight: bold;
-  color: #333;
-}
-
-nav.main-navbar .nav-icons .dropdown-icon {
-  margin-left: 5px;
-  font-size: 12px;
-  color: #333;
-}
-
-nav.main-navbar .nav-icons .cart-icon svg {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+  color: #000; 
+  margin: 0;
+  padding: 0;
 }
 
 /* Hero Section */
@@ -172,25 +181,5 @@ section.hero {
   margin-top: 9rem;
   min-width: 220px;
   width: 70%;
-<<<<<<< HEAD
   color: var(--font-color-dark);
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-  nav.main-navbar {
-    flex-direction: column;
-  }
-
-  nav.main-navbar .nav-buttons button {
-    margin: 10px 0;
-  }
-
-  section.hero {
-    height: auto;
-    text-align: center;
-  }
-}
-=======
-}
->>>>>>> 0a2ca0b63e5b7f173929159a5f5eb0bbdf00de39
