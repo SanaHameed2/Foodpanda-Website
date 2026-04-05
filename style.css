@@ -30,7 +30,7 @@ body {
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 /* Unified Navigation */
@@ -40,13 +40,13 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 20px 0;
+    padding: 16px 0;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,7 +143,7 @@ body {
     gap: 16px;
     overflow-x: auto;
     padding-bottom: 12px;
-    scrollbar-width: none; 
+    scrollbar-width: none; /* Firefox */
 }
 
 .scroll-container::-webkit-scrollbar {
