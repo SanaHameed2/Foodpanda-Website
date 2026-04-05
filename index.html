@@ -2,468 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foodpanda | Food & Groceries Delivery Pakistan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+    <header class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="#">foodpanda</a>
+                <a href="/"><img src="assest/images/foodpanda_logo_2023.svg" alt="foodpanda logo"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Newsroom</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">panda ads</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Careers</a></li>
-            </ul>
-            <div class="location">
-                <a href="#">Choose location ▼</a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn-location">Choose location ▼</button>
+                <button class="btn-login">Log in</button>
+                <button class="btn-cart" aria-label="Cart">🛒</button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Sign up for free delivery <br>on your first order</h1>
-        </div>
-    </section>
+    <main class="main-container">
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sign up for free delivery <br>on your first order</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your full address" id="location-input">
+                    <button class="btn-primary">Find food</button>
+                </div>
+            </div>
+        </section>
 
-    <div class="main-container">
-        <!-- Cuisines Section - Horizontal Scroll -->
         <section class="section">
             <div class="section-header">
                 <h2>Cuisines</h2>
             </div>
             <div class="scroll-container">
-                <div class="cuisine-card">Pizza</div>
-                <div class="cuisine-card">Fast Food</div>
-                <div class="cuisine-card">Burgers</div>
-                <div class="cuisine-card">Biryani</div>
-                <div class="cuisine-card">Ice Cream</div>
-                <div class="cuisine-card">Pakistani</div>
-                <div class="cuisine-card">Shawarma</div>
-                <div class="cuisine-card">Chinese</div>
-                <div class="cuisine-card">Desserts</div>
+                <span class="cuisine-card">Pizza</span>
+                <span class="cuisine-card">Fast Food</span>
+                <span class="cuisine-card">Burgers</span>
+                <span class="cuisine-card">Biryani</span>
+                <span class="cuisine-card">Ice Cream</span>
             </div>
         </section>
 
-        <!-- Your Daily Deals -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Your daily deals</h2>
-            </div>
-            <div class="deal-card">
-                <div class="deal-badge">50% OFF</div>
-                <h3>Us too 50% off</h3>
-                <p>PSL deal for Rs.800</p>
-            </div>
-        </section>
-
-        <!-- Same Taste, Same Price -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Same Taste, Same Price</h2>
-            </div>
-            <div class="restaurant-grid">
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Kabul Restaurant</h3>
-                        <div class="rating">★★★★ 24/4 (100%)</div>
-                        <div class="details">25-30 min • $55 • Pakistan</div>
-                        <div class="price">₹150 from Rs.129 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>GM Boom Bom</h3>
-                        <div class="rating">★★★★ ₹4 (100%)</div>
-                        <div class="details">25-30 min • $5 • Fast Food • In-store Price</div>
-                        <div class="price">₹150 from Rs.139 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Jujice Land</h3>
-                        <div class="rating">★★★★★ ₹5 (500%)</div>
-                        <div class="details">20-45 min • $5 • Healthy Food</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Substation F-6</h3>
-                        <div class="rating">★★★★ 4.5 (89%)</div>
-                        <div class="details">23-50 min • $5 • Western</div>
-                        <div class="price">₹150 from Rs.119 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Anatummy</h3>
-                        <div class="rating">★★★★ 4.3 (92%)</div>
-                        <div class="details">20-45 min • $5 • Fast Food</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with S$</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Top Shops - Horizontal Scroll -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Top shops</h2>
-            </div>
-            <div class="scroll-container">
-                <div class="shop-card">
-                    <div class="shop-image"></div>
-                    <h4>Time out Jinaib Avenue</h4>
-                    <p>25 min</p>
-                </div>
-                <div class="shop-card">
-                    <div class="shop-image"></div>
-                    <h4>Punjab Fresh Fruits &...</h4>
-                    <p>35 min</p>
-                </div>
-                <div class="shop-card">
-                    <div class="shop-image"></div>
-                    <h4>allure</h4>
-                    <p>20 min</p>
-                </div>
-                <div class="shop-card">
-                    <div class="shop-image"></div>
-                    <h4>Shelli PK</h4>
-                    <p>25 min</p>
-                </div>
-                <div class="shop-card">
-                    <div class="shop-image"></div>
-                    <h4>Cafe & Bar</h4>
-                    <p>25 min</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Top Brands -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Top brands</h2>
-            </div>
-            <div class="brands-grid">
-                <div class="brand-card">Layes Bakeshop<br><span>25 min</span></div>
-                <div class="brand-card">Pizza Hut<br><span>25 min</span></div>
-                <div class="brand-card">Domino's Pizza<br><span>40 min</span></div>
-                <div class="brand-card">California Pizza<br><span>25 min</span></div>
-                <div class="brand-card">Nigerian Noodles<br><span>25 min</span></div>
-            </div>
-        </section>
-
-        <!-- Home Chef -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Home chef</h2>
-            </div>
-            <div class="restaurant-grid">
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Saudish Biryani</h3>
-                        <div class="badge">B-L</div>
-                        <div class="rating">★★★★ 4.4 (500%)</div>
-                        <div class="details">10-15 min • $5 • Pakistan</div>
-                        <div class="price">₹0.75</div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Saudish Biryani...</h3>
-                        <div class="rating">★★★★ 4.7 (100%)</div>
-                        <div class="details">20-45 min • $5 • Pakistan</div>
-                        <div class="price">₹0.75</div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Kalsoom Kitchen</h3>
-                        <div class="rating">★★★ 27 (100%)</div>
-                        <div class="details">25-50 min • $5 • Pakistan</div>
-                        <div class="price">₹0.75</div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Cafe S</h3>
-                        <div class="rating">★★★ 29 (100%)</div>
-                        <div class="details">40-70 min • $5 • Fast Food</div>
-                        <div class="price">₹0.75</div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Baj Jan K Khany</h3>
-                        <div class="rating">★★★ 3.8 (75%)</div>
-                        <div class="details">40-70 min • $5 • Pakistan</div>
-                        <div class="price">₹0.75</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pepsi Deals -->
-        <section class="section">
-            <div class="section-header">
-                <h2>Pepsi deals</h2>
-            </div>
-            <div class="restaurant-grid">
-                <div class="restaurant-card pepsi-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Ranchers - F11</h3>
-                        <div class="rating">★★★★ 4.7 (500%)</div>
-                        <div class="details">20-30 min • $5 • Fast Food • In-store Price</div>
-                        <div class="price">₹150 from Rs.119 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card pepsi-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Savour Foods...</h3>
-                        <div class="rating">★★★★★ 4.9 (500%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.139 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card pepsi-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Khbabay Ki Sajjil...</h3>
-                        <div class="rating">★★★★★ 4.9 (400%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card pepsi-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>BRIM Burgers - F7</h3>
-                        <div class="rating">★★★★ 4.7 (100%)</div>
-                        <div class="details">25-50 min • $5 • Burgers • In-store Price</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card pepsi-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Karachi Stud</h3>
-                        <div class="rating">★★★★ 4.4 (85%)</div>
-                        <div class="details">20-45 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with S$</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- All Restaurants - Extended -->
         <section class="section">
             <div class="section-header">
                 <h2>All restaurants</h2>
             </div>
-            <div class="restaurant-grid">
-                <div class="restaurant-card">
+            <div class="restaurant-grid" id="restaurant-grid">
+                <article class="restaurant-card">
                     <div class="card-image"></div>
                     <div class="card-content">
-                        <h3>RooftopGrill - Hanif Rajput</h3>
-                        <div class="rating">★★★★ 4.7 (500%)</div>
-                        <div class="details">20-50 min • $5 • Fast Food • In-store Price</div>
-                        <div class="price">₹150 from Rs.119 <span class="saver">with Saver</span></div>
+                        <h3>Kabul Restaurant</h3>
+                        <div class="rating">★★★★ 4.8 (100+)</div>
+                        <p class="details">25-30 min • Pakistan</p>
+                        <div class="price">Rs.129 <span class="saver">with Saver</span></div>
                     </div>
+                </article>
                 </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>YER ISTANBUL</h3>
-                        <div class="rating">★★★★★ 4.9 (500%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Ghanbey Ki Sajjil...</h3>
-                        <div class="rating">★★★★★ 4.9 (400%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Brums Burgers - F7</h3>
-                        <div class="rating">★★★★ 4.7 (100%)</div>
-                        <div class="details">25-50 min • $5 • Burgers • In-store Price</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Bareh Kid</h3>
-                        <div class="rating">★★★★ 4.6 (100%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Burger Lab - Bilawal</h3>
-                        <div class="rating">★★★★ 4.8 (100%)</div>
-                        <div class="details">25-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Savour Foods - Blue Arena</h3>
-                        <div class="rating">★★★★★ 4.9 (500%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.139 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Al Saman Wok Beverly Center</h3>
-                        <div class="rating">★★★★★ 4.9 (100%)</div>
-                        <div class="details">25-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.159 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Karachi Student Biryani - Mehsala</h3>
-                        <div class="rating">★★★★ 4.8 (100%)</div>
-                        <div class="details">20-45 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Mirchi 360 F-10</h3>
-                        <div class="rating">★★★★ 4.8 (100%)</div>
-                        <div class="details">25-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.124 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Simply Sufi - F7</h3>
-                        <div class="rating">★★★★★ 4.9 (200%)</div>
-                        <div class="details">25-50 min • $5 • Burgers</div>
-                        <div class="price">₹150 from Rs.129 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Kaprakiya - G-9</h3>
-                        <div class="rating">★★★★★ 4.9 (100%)</div>
-                        <div class="details">30-50 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Dolma's Noodle - Centaurus Mall</h3>
-                        <div class="rating">★★★★ 4.8 (100%)</div>
-                        <div class="details">20-45 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-                <div class="restaurant-card">
-                    <div class="card-image"></div>
-                    <div class="card-content">
-                        <h3>Ranchers - F11</h3>
-                        <div class="rating">★★★★ 4.7 (500%)</div>
-                        <div class="details">20-45 min • $5 • Pakistan</div>
-                        <div class="price">₹150 from Rs.114 <span class="saver">with Saver</span></div>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <!-- App Download Banner -->
         <section class="app-banner">
             <div class="banner-content">
-                <h2>Unlock exclusive deals and more in our mobile app</h2>
-                <p>Meal for one, fast checkout, food & grocery deals: get it all on foodpanda</p>
+                <h2>Unlock exclusive deals in our app</h2>
                 <div class="app-buttons">
                     <a href="#" class="app-btn">App Store</a>
                     <a href="#" class="app-btn">Google Play</a>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- Footer -->
+    </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>foodpanda</h4>
-                    <a href="#">Navigate</a>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Newcomers</a>
-                    <a href="#">Partners</a>
-                    <a href="#">panda pro</a>
+                    <nav>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Partners</a>
+                    </nav>
                 </div>
                 <div class="footer-col">
                     <h4>Legal</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of use</a>
-                    <a href="#">Cookie policy</a>
-                    <a href="#">Data protection</a>
+                    <nav>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of use</a>
+                    </nav>
                 </div>
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="#">FB</a> <a href="#">IG</a> <a href="#">TW</a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright © 2026 foodpanda</p>
-                <a href="#">Privacy Policy</a>
+                <p>© 2026 foodpanda</p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
