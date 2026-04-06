@@ -2,29 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>foodpanda | Delivery & Takeout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodpanda | Delivery & Takeout in Karachi</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Unified Navigation -->
+<!-- Top Banner -->
+<div class="top-banner">
+    <div class="banner-container">
+        <span class="banner-icon">📦</span>
+        <button class="banner-btn">SIGN UP TO BE A RESTAURANT PARTNER</button>
+        <button class="banner-btn">SIGN UP FOR A BUSINESS ACCOUNT</button>
+        <span class="banner-close">✕</span>
+    </div>
+</div>
+
+<!-- Navbar -->
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
-            <a href="#">foodpanda</a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Foodpanda_logo.svg/2560px-Foodpanda_logo.svg.png" alt="foodpanda">
+            <span>foodpanda</span>
+        </div>
+        <div class="address">
+            <span>📍</span>
+            <input type="text" placeholder="Select your address">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Log in</a></li>
-            <li><a href="#" style="background: var(--brand-pink); color: white; padding: 8px 16px; border-radius: 40px;">Cart 🛒</a></li>
+            <li><button class="btn-outline">Log in</button></li>
+            <li><button class="btn-primary">Sign up for free delivery</button></li>
+            <li class="lang-selector">🌐 EN ▼</li>
+            <li class="cart">🛒</li>
         </ul>
+    </div>
+
+    <!-- Tabs with Search Bar -->
+    <div class="nav-bottom">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants, cuisines, and dishes">
+        </div>
+        <div class="tabs-container">
+            <div class="tab active">Delivery</div>
+            <div class="tab">Pick-up</div>
+            <div class="tab">Shops</div>
+        </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="main-container">
+    <div class="hero-content">
         <h1>Sign up for free delivery on your first order</h1>
         <div class="search-container">
             <input type="text" placeholder="Enter your delivery address">
@@ -33,14 +62,11 @@
     </div>
 </section>
 
-<!-- Main Content -->
 <div class="main-container">
 
     <!-- Cuisines Section -->
     <div class="section">
-        <div class="section-header">
-            <h2>Cuisines</h2>
-        </div>
+        <h2 class="section-header">Cuisines</h2>
         <div class="scroll-container">
             <div class="cuisine-card">🍔 Fast Food</div>
             <div class="cuisine-card">🍛 Biryani</div>
@@ -54,307 +80,246 @@
         </div>
     </div>
 
+    <!-- Your daily deals -->
+    <div class="section">
+        <h2 class="section-header">Your daily deals</h2>
+        <div class="scroll-container">
+            <div class="promo-small-card">Up to 30% off</div>
+            <div class="promo-small-card">PSL deal Rs. 500</div>
+        </div>
+    </div>
+
     <!-- Pepsi Deals Section -->
     <div class="section">
-        <div class="section-header">
-            <h2>Pepsi deals 🥤</h2>
-        </div>
+        <h2 class="section-header">Pepsi deals 🥤</h2>
         <div class="restaurant-grid">
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/FF6B9D/ffffff?text=Munchies');"></div>
                 <div class="card-content">
-                    <h3>Munchies</h3>
-                    <div class="rating">⭐ 4.3 (200+)</div>
-                    <div class="details">30-35 min • Fast Food</div>
-                    <div class="price">$5</div>
+                    <h3>Munchies F-8</h3>
+                    <div class="rating">⭐ 4.3 (450+)</div>
+                    <div class="details">25-35 min • Fast Food</div>
+                    <div class="price">From Rs. 149</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/FF6B9D/ffffff?text=Savour+Foods');"></div>
                 <div class="card-content">
-                    <h3>Snack Attack</h3>
-                    <div class="rating">⭐ 4.5 (350+)</div>
-                    <div class="details">40-50 min • Fast Food</div>
-                    <div class="price">$6</div>
+                    <h3>Savour Foods</h3>
+                    <div class="rating">⭐ 4.8 (1,200+)</div>
+                    <div class="details">30-40 min • Pakistani</div>
+                    <div class="price">From Rs. 199</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/FF6B9D/ffffff?text=Karachi+Student');"></div>
                 <div class="card-content">
-                    <h3>Burger Feast</h3>
-                    <div class="rating">⭐ 4.7 (500+)</div>
-                    <div class="details">45-55 min • Fast Food</div>
-                    <div class="price">$7</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
-                <div class="card-content">
-                    <h3>Combo Craze</h3>
-                    <div class="rating">⭐ 4.4 (280+)</div>
-                    <div class="details">50-60 min • Fast Food</div>
-                    <div class="price">$8</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
-                <div class="card-content">
-                    <h3>Mega Platter</h3>
-                    <div class="rating">⭐ 4.6 (420+)</div>
-                    <div class="details">55-65 min • Fast Food</div>
-                    <div class="price">$9</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);"></div>
-                <div class="card-content">
-                    <h3>Family Bucket</h3>
-                    <div class="rating">⭐ 4.8 (600+)</div>
-                    <div class="details">60-70 min • Fast Food</div>
-                    <div class="price">$10</div>
+                    <h3>Karachi Student Biryani</h3>
+                    <div class="rating">⭐ 4.8 (5,200+)</div>
+                    <div class="details">20-40 min • Biryani</div>
+                    <div class="price">From Rs. 139</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Promo Cards Row -->
+    <!-- Promo Offers -->
     <div class="section">
         <div class="restaurant-grid">
-            <div class="restaurant-card" style="background: linear-gradient(135deg, #fff0f5, #ffe0eb);">
-                <div class="card-content">
-                    <h3>🔥 Get 25% off</h3>
-                    <div class="details">Min. order Rs. 480</div>
-                    <div class="price">💳</div>
+            <div class="restaurant-card promo-card">
+                <div class="card-content" style="text-align:center; padding:32px 20px;">
+                    <h3 style="color:#D70F64;">🔥 Up to 30% off</h3>
+                    <p style="margin:12px 0;">On your first order</p>
                 </div>
             </div>
-            <div class="restaurant-card" style="background: linear-gradient(135deg, #f0f5ff, #e0ebff);">
-                <div class="card-content">
-                    <h3>🏦 Bank offers</h3>
-                    <div class="details">Upto 30% off on selected banks</div>
-                    <div class="price">💸</div>
+            <div class="restaurant-card promo-card">
+                <div class="card-content" style="text-align:center; padding:32px 20px;">
+                    <h3 style="color:#D70F64;">🏦 Bank Offers</h3>
+                    <p style="margin:12px 0;">Up to 25% off</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Same Taste, Same Price Slider -->
+    <div class="section">
+        <h2 class="section-header">Same Taste, Same Price</h2>
+        <div class="scroll-container same-taste-slider">
+            <div class="same-taste-card">
+                <img src="https://via.placeholder.com/280x180/FF6B9D/ffffff?text=Karachi+Student" alt="">
+                <h3>Karachi Student Biryani</h3>
+                <p>Same taste • Same price</p>
+            </div>
+            <div class="same-taste-card">
+                <img src="https://via.placeholder.com/280x180/FF6B9D/ffffff?text=Savour+Foods" alt="">
+                <h3>Savour Foods</h3>
+                <p>Same taste • Same price</p>
+            </div>
+            <div class="same-taste-card">
+                <img src="https://via.placeholder.com/280x180/FF6B9D/ffffff?text=OPTP" alt="">
+                <h3>OPTP</h3>
+                <p>Same taste • Same price</p>
+            </div>
+            <div class="same-taste-card">
+                <img src="https://via.placeholder.com/280x180/FF6B9D/ffffff?text=Burger+Lab" alt="">
+                <h3>Burger Lab</h3>
+                <p>Same taste • Same price</p>
+            </div>
+            <div class="same-taste-card">
+                <img src="https://via.placeholder.com/280x180/FF6B9D/ffffff?text=Red+Apple" alt="">
+                <h3>Red Apple</h3>
+                <p>Same taste • Same price</p>
             </div>
         </div>
     </div>
 
     <!-- Top Brands Section -->
     <div class="section">
-        <div class="section-header">
-            <h2>Top brands</h2>
+        <h2 class="section-header">Top brands</h2>
+        <div class="restaurant-grid brand-grid">
+            <div class="restaurant-card brand-card-item">
+                <img src="https://via.placeholder.com/80x80/FF6B9D/ffffff?text=McD" alt="McDonald's">
+                <h3>McDonald's</h3>
+                <p>15-35 min</p>
+            </div>
+            <div class="restaurant-card brand-card-item">
+                <img src="https://via.placeholder.com/80x80/FF6B9D/ffffff?text=Domino's" alt="Domino's">
+                <h3>Domino's Pizza</h3>
+                <p>25-45 min</p>
+            </div>
+            <div class="restaurant-card brand-card-item">
+                <img src="https://via.placeholder.com/80x80/FF6B9D/ffffff?text=KFC" alt="KFC">
+                <h3>KFC</h3>
+                <p>20-40 min</p>
+            </div>
+            <div class="restaurant-card brand-card-item">
+                <img src="https://via.placeholder.com/80x80/FF6B9D/ffffff?text=Papa" alt="Papa Johns">
+                <h3>Papa Johns</h3>
+                <p>25 min</p>
+            </div>
+            <div class="restaurant-card brand-card-item">
+                <img src="https://via.placeholder.com/80x80/FF6B9D/ffffff?text=BurgerLab" alt="Burger Lab">
+                <h3>Burger Lab</h3>
+                <p>20-40 min</p>
+            </div>
         </div>
+    </div>
+
+    <!-- Home Chef Section -->
+    <div class="section">
+        <h2 class="section-header">Home chef</h2>
         <div class="restaurant-grid">
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
+            <div class="restaurant-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/2ecc71/ffffff?text=Suadish+Biryani');"></div>
                 <div class="card-content">
-                    <h3>McDonald's</h3>
-                    <div class="details">15-40 min</div>
+                    <h3>Suadish Biryani</h3>
+                    <div class="rating">⭐ 4.6 (980+)</div>
+                    <div class="details">20-40 min • Home Style • Rs.159+</div>
                 </div>
             </div>
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
+            <div class="restaurant-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/e67e22/ffffff?text=Mummy%27s+Kitchen');"></div>
                 <div class="card-content">
-                    <h3>Domino's</h3>
-                    <div class="details">40 min</div>
+                    <h3>Mummy's Kitchen</h3>
+                    <div class="rating">⭐ 4.7 (1,450+)</div>
+                    <div class="details">15-35 min • Pakistani • Rs.149+</div>
                 </div>
-            </div>
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
-                <div class="card-content">
-                    <h3>Subway</h3>
-                    <div class="details">10-35 min</div>
-                </div>
-            </div>
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
-                <div class="card-content">
-                    <h3>KFC</h3>
-                    <div class="details">20-40 min</div>
-                </div>
-            </div>
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
-                <div class="card-content">
-                    <h3>Papa Johns</h3>
-                    <div class="details">20 min</div>
-                </div>
-            </div>
-            <div class="restaurant-card" style="text-align: center;">
-                <div class="card-image" style="height: 80px; background: #f0f0f0; border-radius: 50%; width: 80px; margin: 16px auto 0;"></div>
-                <div class="card-content">
-                    <h3>Layers</h3>
-                    <div class="details">10 min</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Top Shops Section -->
-    <div class="section">
-        <div class="section-header">
-            <h2>Top shops</h2>
-        </div>
-        <div class="scroll-container">
-            <div class="cuisine-card">🛒 Punjab Fresh</div>
-            <div class="cuisine-card">🥬 Fruits & Veg</div>
-            <div class="cuisine-card">⛽ Shell (PK)</div>
-            <div class="cuisine-card">💡 E-lite</div>
-            <div class="cuisine-card">🍰 Allure</div>
-            <div class="cuisine-card">🥤 Juice Land</div>
-        </div>
-    </div>
-
-    <!-- pandapro Section -->
-    <div class="section">
-        <div class="restaurant-card" style="background: #2D2F31; color: white;">
-            <div class="card-content">
-                <h3 style="color: white; font-size: 24px;">pandapro</h3>
-                <div class="details" style="color: #ccc;">Unlimited free delivery & extra discounts</div>
-                <div class="price" style="color: #FF6B9D;">✨ Learn more →</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- App Download Section -->
-    <div class="section">
-        <div class="restaurant-card" style="background: linear-gradient(105deg, #FCE5EC 0%, #FEDCE5 100%);">
-            <div class="card-content">
-                <h3>Get the app</h3>
-                <div class="details">Exclusive deals, faster checkout, and more</div>
-                <div style="margin-top: 12px;">📱 App Store & Google Play</div>
-                <div style="margin-top: 12px; background: white; border-radius: 20px; padding: 8px 12px; display: inline-block;">📲 QR Code</div>
             </div>
         </div>
     </div>
 
     <!-- All Restaurants Section -->
     <div class="section">
-        <div class="section-header">
-            <h2>All restaurants near you</h2>
-        </div>
+        <h2 class="section-header">All restaurants near you</h2>
         <div class="restaurant-grid">
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
-                <div class="card-content">
-                    <h3>Suadish Biryani</h3>
-                    <div class="rating">⭐ 4.4 (500+)</div>
-                    <div class="details">5-25 min • Pakistani • Rs.139</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/e74c3c/ffffff?text=Karachi+Student+Biryani');"></div>
                 <div class="card-content">
                     <h3>Karachi Student Biryani</h3>
-                    <div class="rating">⭐ 4.8 (5000+)</div>
-                    <div class="details">10-35 min • Pakistani • Rs.139</div>
+                    <div class="rating">⭐ 4.8 (5,200+)</div>
+                    <div class="details">15-35 min • Biryani • Rs.139+</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/2ecc71/ffffff?text=Savour+Foods');"></div>
                 <div class="card-content">
                     <h3>Savour Foods</h3>
-                    <div class="rating">⭐ 4.9 (50000+)</div>
-                    <div class="details">10-35 min • Pakistani • Rs.149</div>
+                    <div class="rating">⭐ 4.9 (52,000+)</div>
+                    <div class="details">20-40 min • Pakistani • Rs.149+</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
-                <div class="card-content">
-                    <h3>Khabbay Ki Sajji</h3>
-                    <div class="rating">⭐ 4.9 (4000+)</div>
-                    <div class="details">15-40 min • Pakistani • Rs.149</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
-                <div class="card-content">
-                    <h3>What A Paratha</h3>
-                    <div class="rating">⭐ 4.8 (5000+)</div>
-                    <div class="details">15-40 min • Pakistani • Rs.169</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/3498db/ffffff?text=OPTP');"></div>
                 <div class="card-content">
                     <h3>OPTP - Jinnah Super</h3>
-                    <div class="rating">⭐ 4.8 (10000+)</div>
-                    <div class="details">15-40 min • Fast Food • Rs.169</div>
+                    <div class="rating">⭐ 4.8 (12,400+)</div>
+                    <div class="details">15-35 min • Fast Food • Rs.169+</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/f39c12/ffffff?text=Burger+Lab');"></div>
                 <div class="card-content">
                     <h3>Burger Lab</h3>
-                    <div class="rating">⭐ 4.7 (1000+)</div>
-                    <div class="details">20 min • Burgers • Rs.149</div>
+                    <div class="rating">⭐ 4.7 (8,900+)</div>
+                    <div class="details">20-40 min • Burgers • Rs.149+</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/9b59b6/ffffff?text=What+A+Paratha');"></div>
                 <div class="card-content">
-                    <h3>Lahori Tikka</h3>
-                    <div class="rating">⭐ 4.8 (1000+)</div>
-                    <div class="details">5-30 min • Pakistani • Rs.139</div>
+                    <h3>What A Paratha</h3>
+                    <div class="rating">⭐ 4.8 (5,100+)</div>
+                    <div class="details">15-40 min • Paratha • Rs.169+</div>
                 </div>
+            </div>
+            <div class="restaurant-card">
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/e67e22/ffffff?text=Red+Apple');"></div>
+                <div class="card-content">
+                    <h3>Red Apple - F10</h3>
+                    <div class="rating">⭐ 4.8 (4,200+)</div>
+                    <div class="details">20-45 min • Fast Food • Rs.149+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile App Promotion -->
+    <div class="app-promo-section">
+        <div class="app-promo-content">
+            <div class="app-promo-text">
+                <h2>Unlock exclusive deals and more in our mobile app</h2>
+                <p>Meal for one, fast checkout, food & grocery deals: get it all on foodpanda</p>
+                <div class="app-buttons">
+                    <button class="app-store-btn">App Store</button>
+                    <button class="play-store-btn">Play Store</button>
+                </div>
+            </div>
+            <div class="app-promo-image">
+                <img src="https://via.placeholder.com/280x280/FF6B9D/ffffff?text=Foodpanda+Panda" alt="Foodpanda Panda">
             </div>
         </div>
     </div>
 
     <!-- Daily Deals Section -->
     <div class="section">
-        <div class="section-header">
-            <h2>🔥 Daily deals & discounts</h2>
-        </div>
+        <h2 class="section-header">🔥 Daily deals & discounts</h2>
         <div class="restaurant-grid">
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/3498db/ffffff?text=Subway');"></div>
                 <div class="card-content">
                     <h3>Subway - F8</h3>
                     <div class="rating">⭐ 4.5 (500+)</div>
-                    <div class="details">10-35 min • Sandwiches • Rs.139</div>
+                    <div class="details">10-35 min • Sandwiches</div>
+                    <div class="price">From Rs. 139</div>
                 </div>
             </div>
             <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
-                <div class="card-content">
-                    <h3>XO Chinese Chips</h3>
-                    <div class="rating">⭐ 4.8 (100+)</div>
-                    <div class="details">10-35 min • Chinese • Rs.139</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
-                <div class="card-content">
-                    <h3>Juice Land - Bluearea</h3>
-                    <div class="rating">⭐ 4.9 (500+)</div>
-                    <div class="details">5-30 min • Healthy • Rs.149</div>
-                </div>
-            </div>
-            <div class="restaurant-card">
-                <div class="card-image" style="background-image: linear-gradient(135deg, #ddd, #ccc);"></div>
+                <div class="card-image" style="background-image: url('https://via.placeholder.com/300x180/e67e22/ffffff?text=Red+Apple');"></div>
                 <div class="card-content">
                     <h3>Red Apple - F10</h3>
-                    <div class="rating">⭐ 4.8 (4000+)</div>
-                    <div class="details">20-45 min • Fast Food • Rs.149</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Brand Partnership Section -->
-    <div class="section">
-        <div class="restaurant-grid">
-            <div class="restaurant-card" style="background: #ffe6f0;">
-                <div class="card-content">
-                    <h3>🥤 Pepsi® x foodpanda</h3>
-                    <div class="details">Get up to 40% off on combo meals</div>
-                    <div class="price">🎯</div>
-                </div>
-            </div>
-            <div class="restaurant-card" style="background: #f0f2f5;">
-                <div class="card-content">
-                    <h3>🏆 F7 Gourmet selection</h3>
-                    <div class="details">Exclusive premium restaurants</div>
-                    <div class="price">✨</div>
+                    <div class="rating">⭐ 4.8 (4,000+)</div>
+                    <div class="details">20-45 min • Fast Food</div>
+                    <div class="price">From Rs. 149</div>
                 </div>
             </div>
         </div>
@@ -376,7 +341,6 @@
                 <h4>Legal</h4>
                 <a href="#">Terms & conditions</a>
                 <a href="#">Privacy policy</a>
-                <a href="#">Cookies</a>
             </div>
             <div class="footer-col">
                 <h4>Services</h4>
@@ -386,10 +350,8 @@
             </div>
             <div class="footer-col">
                 <h4>Follow us</h4>
-                <div style="display: flex; gap: 20px; font-size: 24px;">
-                    <span>📘</span> <span>🐦</span> <span>📸</span> <span>▶️</span>
-                </div>
-                <div style="margin-top: 16px;">📞 help@foodpanda.pk</div>
+                <div class="social-icons">📘 🐦 📸 ▶️</div>
+                <div class="contact-email">help@foodpanda.pk</div>
             </div>
         </div>
         <div class="copyright">
