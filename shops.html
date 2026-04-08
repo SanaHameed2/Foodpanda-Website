@@ -1,643 +1,424 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>foodpanda | Shops - Grocery & More in Islamabad</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="shops.css" />
-  </head>
-  <body>
+</head>
+<body>
     <!-- Top Banner -->
     <div class="top-banner">
-      <div class="banner-container">
-        <span class="banner-icon">📦</span>
-        <button class="banner-btn">SIGN UP TO BE A RESTAURANT PARTNER</button>
-        <button class="banner-btn">SIGN UP FOR A BUSINESS ACCOUNT</button>
-        <span class="banner-close">✕</span>
-      </div>
+        <div class="banner-container">
+            <span class="banner-icon">📦</span>
+            <button class="banner-btn">SIGN UP TO BE A RESTAURANT PARTNER</button>
+            <button class="banner-btn">SIGN UP FOR A BUSINESS ACCOUNT</button>
+            <span class="banner-close">✕</span>
+        </div>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <img
-            src="assest/images/foodpanda_logo_2023.svg"
-            alt="foodpanda"
-            onerror="
-              this.src =
-                'https://www.foodpanda.pk/static/images/foodpanda_logo_2023.svg'
-            "
-          />
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assest/images/foodpanda_logo_2023.svg" alt="foodpanda" onerror="this.src='https://www.foodpanda.pk/static/images/foodpanda_logo_2023.svg'" />
+            </div>
+            <div class="address">
+                <span>📍</span>
+                <input type="text" placeholder="Select your address" value="G-10 Markaz, Islamabad" />
+            </div>
+            <ul class="nav-links">
+                <li><button class="btn-outline">Log in</button></li>
+                <li><button class="btn-primary">Sign up for free delivery</button></li>
+                <li class="lang-selector">
+                    <img src="assest/images/globe.png" alt="globe" onerror="this.src='https://cdn-icons-png.flaticon.com/512/555/555417.png'" />
+                    EN ▼
+                </li>
+                <li class="cart">🛒</li>
+            </ul>
         </div>
-        <div class="address">
-          <span>📍</span>
-          <input
-            type="text"
-            placeholder="Select your address"
-            value="G-10 Markaz, Islamabad"
-          />
+        <div class="nav-bottom">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for shops, products, and brands..." />
+            </div>
+            <div class="tabs-container">
+                <div class="tab">Delivery</div>
+                <div class="tab">Pick-up</div>
+                <div class="tab">pandamart</div>
+                <div class="tab active">Shops</div>
+            </div>
         </div>
-        <ul class="nav-links">
-          <li><button class="btn-outline">Log in</button></li>
-          <li>
-            <button class="btn-primary">Sign up for free delivery</button>
-          </li>
-          <li class="lang-selector">
-            <img
-              src="assest/images/globe.png"
-              alt="globe"
-              onerror="
-                this.src =
-                  'https://cdn-icons-png.flaticon.com/512/555/555417.png'
-              "
-            />
-            EN ▼
-          </li>
-          <li class="cart">🛒</li>
-        </ul>
-      </div>
-      <div class="nav-bottom">
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Search for shops, products, and brands..."
-          />
-        </div>
-        <div class="tabs-container">
-          <div class="tab">Delivery</div>
-          <div class="tab">Pick-up</div>
-          <div class="tab">pandamart</div>
-          <div class="tab active">Shops</div>
-        </div>
-      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
-        <h1>Shop groceries & more <br />delivered to your door</h1>
-        <div class="search-container">
-          <input type="text" placeholder="Enter your delivery address" />
-          <button class="btn-primary">Find shops</button>
+        <div class="hero-content">
+            <h1>Shop groceries & more <br />delivered to your door</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Enter your delivery address" />
+                <button class="btn-primary">Find shops</button>
+            </div>
         </div>
-      </div>
     </section>
 
     <div class="main-container">
-      <!-- Deals & More Section -->
-      <div class="section">
-        <h2 class="section-header">🔥 Deals & More</h2>
-        <div class="shop-grid">
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/fruits-veggies/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Fruits & Veggies Mart</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 10-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="shop-badge">3x1st</div>
-              <button class="shop-btn">Shop Now →</button>
+        <!-- Deals & More Section -->
+        <div class="section">
+            <h2 class="section-header">🔥 Deals & More</h2>
+            <div class="shop-grid">
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Fruits & Veggies Mart</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 10-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="shop-badge">3x1st</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>KASHMIR PHARMACY</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 10-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/kashmir-pharmacy/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>KASHMIR PHARMACY</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 10-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Top Picks Section -->
-      <div class="section">
-        <h2 class="section-header">⭐ Top Picks</h2>
-        <div class="shop-grid">
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/family-cash-carry/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Family Cash & Carry G-10 M...</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="rating">⭐ 4.6 (1,200+)</div>
-              <button class="shop-btn">Shop Now →</button>
+        <!-- Top Picks Section -->
+        <div class="section">
+            <h2 class="section-header">⭐ Top Picks</h2>
+            <div class="shop-grid">
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Family Cash & Carry G-10 M...</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="rating">⭐ 4.6 (1,200+)</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Med-Cure Pharmacy</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 5-20 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="rating">⭐ 4.8 (2,300+)</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Punjab Fresh Fruits & Vegeta...</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 12-40 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="rating">⭐ 4.5 (890+)</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>NUTS CARTEL DRY FRUITS</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="rating">⭐ 4.9 (560+)</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Attock Store</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <div class="shop-badge">6x2</div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/med-cure/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Med-Cure Pharmacy</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 5-20 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="rating">⭐ 4.8 (2,300+)</div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/punjab-fresh/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Punjab Fresh Fruits & Vegeta...</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 12-40 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="rating">⭐ 4.5 (890+)</div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/nuts-cartel/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>NUTS CARTEL DRY FRUITS</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="rating">⭐ 4.9 (560+)</div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/attock/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Attock Store</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <div class="shop-badge">6x2</div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Shop by store Section -->
-      <div class="section">
-        <h2 class="section-header">🏪 Shop by store</h2>
-        <div class="shop-grid shop-by-store-grid">
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/punjabi-milk/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Punjabi Milk Shop F10</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
+        <!-- Shop by store Section -->
+        <div class="section">
+            <h2 class="section-header">🏪 Shop by store</h2>
+            <div class="shop-grid shop-by-store-grid">
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Punjabi Milk Shop F10</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Nuts Cartel Dry Fruits</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Shafique Kayani Super Store</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 20-35 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Nutrioland</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Fruity Vapes - F-10</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 10-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Fruits Market</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Sarhad Vegetables & Fruit Shop</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 10-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Family Cash & Carry G-10 Markaz</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Med-Cure Pharmacy</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 5-20 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Punjab Fresh Fruits & Vegetable...</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Shell Select Parkview</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 10-25 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Ain Mini Mart</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Al-Fajar Pharmacy & Cosmetics</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 20-35 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Kilani Mart</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>Imam Super Mart</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>I Supermarket and Cosmetics</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>NA Cash & Carry</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image" style="background-image: url('assest/images/s0ke-listing.jpg');"></div>
+                    <div class="shop-content">
+                        <h3>E-Grocers & Organic Atta Chakki</h3>
+                        <div class="shop-meta">
+                            <span class="time">⏱️ 15-30 min</span>
+                            <span class="free-delivery">🚚 Free delivery on first order</span>
+                        </div>
+                        <button class="shop-btn">Shop Now →</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/nuts-cartel/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Nuts Cartel Dry Fruits</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/kayani-super/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Shafique Kayani Super Store</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 20-35 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/nutrioland/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Nutrioland</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/fruity-vapes/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Fruity Vapes - F-10</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 10-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/fruits-market/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Fruits Market</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/sarhad-veg/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Sarhad Vegetables & Fruit Shop</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 10-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/family-cash-carry/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Family Cash & Carry G-10 Markaz</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/med-cure/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Med-Cure Pharmacy</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 5-20 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/punjab-fresh/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Punjab Fresh Fruits & Vegetable...</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/shell-select/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Shell Select Parkview</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 10-25 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/ain-mart/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Ain Mini Mart</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/al-fajar/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Al-Fajar Pharmacy & Cosmetics</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 20-35 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/kilani-mart/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Kilani Mart</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/imam-super/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>Imam Super Mart</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/i-supermarket/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>I Supermarket and Cosmetics</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/na-cash-carry/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>NA Cash & Carry</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
-          <div class="shop-card">
-            <div
-              class="shop-image"
-              style="
-                background-image: url(&quot;https://images.deliveryhero.io/image/foodpanda/shops/e-grocers/logo.jpg&quot;);
-              "
-            ></div>
-            <div class="shop-content">
-              <h3>E-Grocers & Organic Atta Chakki</h3>
-              <div class="shop-meta">
-                <span class="time">⏱️ 15-30 min</span>
-                <span class="free-delivery"
-                  >🚚 Free delivery on first order</span
-                >
-              </div>
-              <button class="shop-btn">Shop Now →</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Info Sections -->
-      <div class="info-section">
-        <div class="info-card">
-          <h2>🛍️ Food delivery in Islamabad has never been easier</h2>
-          <p>
-            Islamabad food delivery is just what modern fast-paced lifestyles
-            need. Get groceries, medicines, and daily essentials delivered right
-            to your doorstep.
-          </p>
+        <!-- Info Sections -->
+        <div class="info-section">
+            <div class="info-card">
+                <h2>🛍️ Food delivery in Islamabad has never been easier</h2>
+                <p>Islamabad food delivery is just what modern fast-paced lifestyles need. Get groceries, medicines, and daily essentials delivered right to your doorstep.</p>
+            </div>
+            <div class="info-card">
+                <h2>🍽️ What to order from Islamabad restaurants for delivery</h2>
+                <p>From traditional Pakistani cuisine to international flavors, explore the best dining options in the capital city.</p>
+            </div>
+            <div class="info-card">
+                <h2>⭐ Famous restaurants for online food delivery in Islamabad</h2>
+                <p>Discover top-rated restaurants loved by locals for their quality, taste, and speedy delivery service.</p>
+            </div>
+            <div class="info-card">
+                <h2>🌙 Best Ramzan deals - for sehri and iftari available for delivery</h2>
+                <p>Special Ramzan offers and meal deals to make your fasting month easier and more delicious.</p>
+            </div>
+            <div class="info-card">
+                <h2>🍳 Presenting "no-cook Ramzan" only to foodies</h2>
+                <p>Ready-to-eat meals and iftari platters delivered fresh to your home during Ramzan.</p>
+            </div>
         </div>
-        <div class="info-card">
-          <h2>🍽️ What to order from Islamabad restaurants for delivery</h2>
-          <p>
-            From traditional Pakistani cuisine to international flavors, explore
-            the best dining options in the capital city.
-          </p>
-        </div>
-        <div class="info-card">
-          <h2>⭐ Famous restaurants for online food delivery in Islamabad</h2>
-          <p>
-            Discover top-rated restaurants loved by locals for their quality,
-            taste, and speedy delivery service.
-          </p>
-        </div>
-        <div class="info-card">
-          <h2>
-            🌙 Best Ramzan deals - for sehri and iftari available for delivery
-          </h2>
-          <p>
-            Special Ramzan offers and meal deals to make your fasting month
-            easier and more delicious.
-          </p>
-        </div>
-        <div class="info-card">
-          <h2>🍳 Presenting "no-cook Ramzan" only to foodies</h2>
-          <p>
-            Ready-to-eat meals and iftari platters delivered fresh to your home
-            during Ramzan.
-          </p>
-        </div>
-      </div>
     </div>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>foodpanda</h4>
-          <a href="#">About us</a>
-          <a href="#">Careers</a>
-          <a href="#">Press</a>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>foodpanda</h4>
+                <a href="#">About us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#">pandapro</a>
+                <a href="#">pandamart</a>
+                <a href="#">pandago</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-icons">📘 🐦 📸 ▶️</div>
+                <div class="contact-email">help@foodpanda.pk</div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="#">Terms & conditions</a>
-          <a href="#">Privacy policy</a>
+        <div class="copyright">
+            © 2026 foodpanda Pakistan. All rights reserved. Shop & Save.
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <a href="#">pandapro</a>
-          <a href="#">pandamart</a>
-          <a href="#">pandago</a>
-        </div>
-        <div class="footer-col">
-          <h4>Follow us</h4>
-          <div class="social-icons">📘 🐦 📸 ▶️</div>
-          <div class="contact-email">help@foodpanda.pk</div>
-        </div>
-      </div>
-      <div class="copyright">
-        © 2026 foodpanda Pakistan. All rights reserved. Shop & Save.
-      </div>
     </footer>
-  </body>
+</body>
 </html>
