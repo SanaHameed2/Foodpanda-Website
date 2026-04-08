@@ -1,0 +1,649 @@
+/* pickup.css - Complete styles for foodpanda Pickup page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+}
+
+/* ========== TOP BANNER ========== */
+.top-banner {
+    background: #1a1a1a;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.banner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 24px;
+}
+
+.banner-icon {
+    font-size: 18px;
+}
+
+.banner-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.banner-btn:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.banner-close {
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.banner-close:hover {
+    opacity: 1;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 30px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.address input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #D70F64;
+    color: #D70F64;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-outline:hover {
+    background: #D70F64;
+    color: white;
+}
+
+.btn-primary {
+    background: #D70F64;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background: #b80d54;
+}
+
+.lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.lang-selector img {
+    height: 16px;
+}
+
+.cart {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Nav Bottom Tabs */
+.nav-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.search-bar input:focus {
+    border-color: #D70F64;
+}
+
+.tabs-container {
+    display: flex;
+    gap: 24px;
+}
+
+.tab {
+    font-weight: 600;
+    padding-bottom: 8px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #D70F64;
+}
+
+.tab.active {
+    color: #D70F64;
+    border-bottom: 3px solid #D70F64;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    background: linear-gradient(135deg, #ff6b4a 0%, #D70F64 100%);
+    padding: 50px 24px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.search-container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container button {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-container button:hover {
+    background: #333;
+}
+
+/* ========== MAIN CONTAINER ========== */
+.main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Section Header */
+.section-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 32px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header:first-of-type {
+    margin-top: 0;
+}
+
+.show-map {
+    color: #D70F64;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.show-map:hover {
+    opacity: 0.8;
+}
+
+/* Daily Deals */
+.daily-deals {
+    background: #fff5e6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.daily-deals h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.deals-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.deals-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.deals-scroll::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.deals-scroll::-webkit-scrollbar-thumb {
+    background: #D70F64;
+    border-radius: 10px;
+}
+
+.deal-item {
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.deal-item:hover {
+    transform: translateY(-4px);
+}
+
+.deal-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.deal-item p {
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.deal-item small {
+    font-size: 11px;
+    color: #666;
+}
+
+/* Restaurant Grid */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.card-image {
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f5f5;
+    transition: transform 0.3s;
+}
+
+.restaurant-card:hover .card-image {
+    transform: scale(1.02);
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.rating {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.details {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: 800;
+    color: #D70F64;
+    font-size: 14px;
+}
+
+.pickup-badge {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Cuisine Chips */
+.cuisine-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+}
+
+.cuisine-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.cuisine-scroll::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.cuisine-scroll::-webkit-scrollbar-thumb {
+    background: #D70F64;
+    border-radius: 10px;
+}
+
+.cuisine-chip {
+    background: #f5f5f5;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.cuisine-chip:hover {
+    background: #D70F64;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.cuisine-chip img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #1a1a1a;
+    color: #aaa;
+    padding: 48px 24px 24px;
+    margin-top: 48px;
+}
+
+.footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-col a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: #D70F64;
+}
+
+.social-icons {
+    font-size: 24px;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.contact-email {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.copyright {
+    max-width: 1280px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 24px;
+    border-top: 1px solid #333;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 900px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .address {
+        max-width: 100%;
+    }
+    
+    .nav-links {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .nav-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-bar {
+        max-width: 100%;
+    }
+    
+    .tabs-container {
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .section-header {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .restaurant-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 16px;
+    }
+    
+    .banner-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .banner-btn {
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 16px;
+    }
+    
+    .daily-deals {
+        padding: 16px;
+    }
+    
+    .deal-item {
+        min-width: 140px;
+    }
+    
+    .cuisine-chip {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    
+    .hero {
+        padding: 32px 16px;
+    }
+    
+    .hero h1 {
+        font-size: 24px;
+    }
+}
+
+/* Loading animation for images */
+.card-image {
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.card-image::after {
+    content: "🍽️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    opacity: 0.3;
+}
